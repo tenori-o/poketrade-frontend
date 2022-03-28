@@ -1,0 +1,64 @@
+#content {
+  min-width: 100%;
+}
+
+header div {
+  align-items: center;
+  justify-content: center;
+}
+
+.headerpoke-top {
+  background-color: red;
+}
+
+.headerpoke-middle {
+  background-color: black;
+}
+
+.headerpoke-bottom {
+  background-color: white;
+}
+
+header p {
+  color: black;
+  font-weight: 700;
+  font-size: medium;
+}
+
+.nav-link.active {
+  font-weight: 700;
+}
+
+.nav-link, .nav-link:hover, .nav-link:focus {
+  color:red;
+}
+
+.nav-link {
+  color:red;
+}
+
+.nav-link:hover {
+  font-weight: 500;
+}
+
+.column {
+  width: 10rem !important; 
+}
+
+.task {
+  align-items: center;
+  justify-content: initial;
+  color: black;
+}
+
+.task img {
+  height: 70%;
+}
+
+.task div {
+  text-align: initial;
+}
+
+.task div p, .task div p span {
+  font-size: 13px;
+}

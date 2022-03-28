@@ -1,0 +1,11 @@
+.card-text {
+  color: black;
+}
+
+.row {
+  padding-bottom: calc(var(--bs-gutter-x) * 1);
+}
+
+.pokemonContainer {
+  width: 70%;
+}

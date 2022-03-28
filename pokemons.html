@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/index.css" />
+  <link rel="stylesheet" href="css/pokemonlist.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.3/dragula.min.js'></script>
+  <script src="js/services/poketradeapi.js"></script>
+  <script src="js/controller/pokemonlist/pokemonlist.js"></script>
+  <title>Poke Trade Calculator</title>
+</head>
+<body>
+  <header>
+    <div class="container-fluid text-white text-center shadow p-3 headerpoke-top" style="height: 50px;">
+      <h2 style="margin-top: -10px;">Poke Trade Calculator</h2>
+    </div>
+    <div class="container-fluid text-white text-center shadow headerpoke-middle" style="height: 20px;">
+    </div>
+    <div class="container-fluid text-black text-center shadow p-3 mb-3 headerpoke-bottom" style="height: 50px;">
+      Calculates if the trade between two pokemon players is fair for both
+    </div>
+    <nav>
+      <ul class="nav nav-tabs justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Pokemons</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <section  id="content" class="container p-4 bg-dark text-white">
+    <div class="container p-4 bg-dark text-white">
+      <aside>
+        <h3>Available Pokemons</h3>
+        <br/>
+        <div id="pokemonContainer" class="container pokemonContainer">
+          
+        </div>
+      </aside>
+    </div>
+  </section>
+  <footer class="bg-dark text-center text-white">
+    <!-- Copyright -->
+    © 2022 Copyright:
+      <a class="text-white" href="tenori_o@outlook.com">Lucas Tenório dos Santos</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+</body>
+</html>

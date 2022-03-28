@@ -1,0 +1,23 @@
+.accordion-button {
+  color: white;
+  font-weight: 700;
+  background-color: #6b6a6a;
+}
+
+.accordion-button:not(.collapsed) {
+  color: white !important;
+  background-color: #555454;
+}
+
+.accordion-body {
+  background-color: #807d7d;
+}
+
+.about-anchor {
+  font-weight: 600;
+  color: white !important;
+}
+
+.about-anchor:hover {
+  color: rgb(214, 214, 214) !important;
+}
