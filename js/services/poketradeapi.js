@@ -1,4 +1,4 @@
-const urlPokeTradeAPI = "https://localhost:5011/api/trade/";
+const urlPokeTradeAPI = "https://poketradeapi.herokuapp.com/api/trade/";
 const urlPokeAPI = "https://pokeapi.co/api/v2/pokemon/";
 
 let headers = {
