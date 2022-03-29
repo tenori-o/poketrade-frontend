@@ -34,7 +34,7 @@ function makePokemonTrade() {
 
   makeTrade(pokeReq).then(data => {
     if (data)
-      alert('The trading was succeded');
+      alert('Trade operation completed');
     else {
       alert('Error while making the trade: ');
     }
