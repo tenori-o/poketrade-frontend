@@ -2,6 +2,7 @@ const urlPokeTradeAPI = "https://poketradeapi-lucastenorio.herokuapp.com/api/tra
 const urlPokeAPI = "https://pokeapi.co/api/v2/pokemon/";
 
 let headers = {
+  'Access-Control-Allow-Origin':'*',
   'Accept': 'application/json',
   'Content-Type': 'application/json'
 };
@@ -9,6 +10,7 @@ let headers = {
 function makeTrade(pokeRequest) {
   const obj = {
     method: "POST",
+    mode: 'cors',
     headers: headers,
     body: JSON.stringify(pokeRequest)
   };
@@ -18,7 +20,12 @@ function makeTrade(pokeRequest) {
 }
 
 function getHistory() {
-  return fetch(urlPokeTradeAPI.concat('GetTradeHistory'))
+  const obj = {
+    method: "GET",
+    mode: 'cors',
+    headers: headers
+  };
+  return fetch(urlPokeTradeAPI.concat('GetTradeHistory'), obj)
     .then(response => response.json())
 }
 
