@@ -22,7 +22,7 @@ window.onload = function () {
 
 function addTask() {
   if ($('#player1').children().length < 6) {
-    var pokemonName = $('#taskText').val();
+    var pokemonName = $('#taskText').val().toLowerCase();
     if (!validateText(pokemonName))
       alert('A pokemon name must be informed')
     else

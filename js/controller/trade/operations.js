@@ -33,12 +33,12 @@ function makePokemonTrade() {
   let pokeReq = createPokemonRequest();
 
   makeTrade(pokeReq).then(data => {
-    if (data.PokemonsP1 == null)
-      alert('Error: ' + data);
+    if (data)
+      alert('The trading was succeded');
     else {
-      console.log(data)
-      getPokemonTradeHistory();
+      alert('Error while making the trade: ');
     }
+    getPokemonTradeHistory();
   }).catch(error => {
     alert("Could not make the trading operation: " + error);
   });
