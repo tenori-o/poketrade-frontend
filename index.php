@@ -1,1 +1,5 @@
-<?php include("index.html");  ?>
+<?php
+header('Access-Control-Allow-Origin: *');
+include("index.html");
+
+?>
