@@ -66,6 +66,11 @@ function renderPokemonItem(data) {
   $('#taskText').val("");
 }
 
+function clearPlayerLists() {
+  $('#player1').empty();
+  $('#player2').empty();
+}
+
 /* Vanilla JS to delete tasks in 'Trash' column */  
 function emptyTrash() {
   document.getElementById("trash").innerHTML = "";

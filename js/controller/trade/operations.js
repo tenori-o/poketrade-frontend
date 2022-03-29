@@ -33,8 +33,10 @@ function makePokemonTrade() {
   let pokeReq = createPokemonRequest();
 
   makeTrade(pokeReq).then(data => {
-    if (data)
+    if (data) {
       alert('Trade operation completed');
+      clearPlayerLists();
+    }
     else {
       alert('Error while making the trade: ');
     }
